@@ -22,11 +22,12 @@ float Automata::off() {
         state = OFF;
         if (cash > 0) {
             std::cout << "Here is your extra cash: " << cash << "\n";
+            float temp = cash;
             cash = 0;
         }
         std::cout << "The automat is OFF\n";
     }
-    return cash;
+    return temp;
 }
 void Automata::coin(float money) {
     if (state == WAIT || state == ACCEPT) {
