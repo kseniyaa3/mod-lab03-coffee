@@ -1,3 +1,4 @@
+// Copyright 2022 UNN-IASR
 #include "Automata.h"
 
 Automata::Automata() {
@@ -74,8 +75,8 @@ void Automata::choice(int d) {
 bool Automata::check() {
     if (state == CHECK) {
         if (prices[drink - 1] > cash) {
-            std::cout << "Not enough money. Your account: " 
-                << cash << ". Required: " 
+            std::cout << "Not enough money. Your account: "
+                << cash << ". Required: "
                 << prices[drink - 1] << "\n";
             return false;
         }
