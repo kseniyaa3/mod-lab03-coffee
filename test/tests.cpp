@@ -4,7 +4,7 @@
 #include "Automata.h"
 
 TEST(case1, test1) {
-	Automata automat = Automata();
+    Automata automat = Automata();
     automat.on();
     automat.coin(10);
     automat.choice(1);
@@ -12,6 +12,7 @@ TEST(case1, test1) {
     STATE state = automat.getState();
     EXPECT_EQ(CHECK, state);
 }
+
 TEST(case2, test2) {
     Automata automat = Automata();
     automat.on();
@@ -23,6 +24,7 @@ TEST(case2, test2) {
     STATE state = automat.getState();
     EXPECT_EQ(WAIT, state);
 }
+
 TEST(case3, test3) {
     Automata automat = Automata();
     automat.on();
@@ -33,6 +35,7 @@ TEST(case3, test3) {
     float cash = automat.off();
     EXPECT_EQ(10.0, cash);
 }
+
 TEST(case4, test4) {
     Automata automat = Automata();
     automat.on();
@@ -41,6 +44,7 @@ TEST(case4, test4) {
     STATE state = automat.getState();
     EXPECT_EQ(WAIT, state);
 }
+
 TEST(case5, test5) {
     Automata automat = Automata();
     automat.on();
