@@ -18,11 +18,12 @@ void Automata::on() {
     }
 }
 float Automata::off() {
+    float temp = 0;
     if (state == WAIT) {
         state = OFF;
         if (cash > 0) {
             std::cout << "Here is your extra cash: " << cash << "\n";
-            float temp = cash;
+            temp = cash;
             cash = 0;
         }
         std::cout << "The automat is OFF\n";
