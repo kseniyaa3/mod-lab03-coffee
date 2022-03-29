@@ -74,7 +74,9 @@ void Automata::choice(int d) {
 bool Automata::check() {
     if (state == CHECK) {
         if (prices[drink - 1] > cash) {
-            std::cout << "Not enough money. Your account: " << cash << ". Required: " << prices[drink - 1] << "\n";
+            std::cout << "Not enough money. Your account: " 
+                << cash << ". Required: " 
+                << prices[drink - 1] << "\n";
             return false;
         }
         return true;
