@@ -1,8 +1,8 @@
+// Copyright 2022 UNN-IASR
 #include <iostream>
 #include "Automata.h"
 
-int main()
-{
+int main() {
     Automata automat;
     automat.on();
     automat.coin(60);
