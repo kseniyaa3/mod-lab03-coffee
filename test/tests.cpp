@@ -33,7 +33,7 @@ TEST(case3, test3) {
     automat.cook();
     automat.finish();
     float cash = automat.off();
-    EXPECT_EQ(10.0, cash);
+    EXPECT_EQ(10, cash);
 }
 
 TEST(case4, test4) {
@@ -57,5 +57,5 @@ TEST(case5, test5) {
     automat.cook();
     automat.finish();
     float cash = automat.off();
-    EXPECT_EQ(30.0, cash);
+    EXPECT_EQ(30, cash);
 }
